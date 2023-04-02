@@ -51,7 +51,6 @@ with mp_hand.Hands(
         # index_finger_tip = hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP]
         index_finger_tip = hand_landmarks.landmark[8]
         
-        
         # draw finger tip using coordinates from Mediapipe normalized output
         x=int(index_finger_tip.x*imageW)
         y=int(index_finger_tip.y*imageH)
